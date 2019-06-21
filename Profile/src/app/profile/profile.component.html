@@ -1,0 +1,302 @@
+<app-nav></app-nav>
+
+<!-- profile details -->
+<section class="profile-details">
+  <div class="container">
+    <div class="goto-back">
+      <a href=""><img src="../../assets/images/icons/back-icon.png" alt="back icon"> Back</a>
+    </div>
+    <div class="desc-1">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="course-box">
+            <h3>Maths Crash Course</h3>            
+            <div class="rating">
+              <ngb-rating [(rate)]="currentRate">
+                <ng-template let-fill="fill" let-index="index">
+                  <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+                </ng-template>
+              </ngb-rating>
+              <pre>{{currentRate}}</pre> 
+              <cite>(127 Reviews)</cite>
+              <span class="tuition">Tuition Center</span>              
+            </div>            
+          </div>
+        </div>              
+        <div class="col-lg-7">
+          <div class="course-overview">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="course-desc">
+                  <div class="co-icon d-inline-flex p-2 bd-highlight">
+                      <img src="../../assets/images/icons/co-icon1.png" alt="Date Icon">
+                  </div>
+                  <div class="co-desc">
+                    <span class="course-content">Date</span>
+                    <span class="course-price">20/11/2018 - 19/02/2019</span>
+                  </div>  
+                </div>    
+              </div>
+              <div class="col">
+                <div class="course-desc">
+                  <div class="co-icon d-inline-flex p-2 bd-highlight">
+                      <img src="../../assets/images/icons/co-icon2.png" alt="Duration Icon">
+                  </div>
+                  <div class="co-desc">
+                    <span class="course-content">Duration</span>
+                    <span class="course-price">1 Hour</span>
+                  </div>  
+                </div>    
+              </div>
+              <div class="col">
+                <div class="course-desc">
+                  <div class="co-icon d-inline-flex p-2 bd-highlight">
+                      <img src="../../assets/images/icons/co-icon3.png" alt="Fees Icon">
+                  </div>
+                  <div class="co-desc">
+                    <span class="course-content">Fees</span>
+                    <span class="course-price">&#8377; 5000/-</span>
+                  </div>  
+                </div>    
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>            
+    </div>
+  </div>
+</section>
+
+<!-- about course -->
+<section class="about-course">
+  <div class="container">
+    <div class="inner-area">
+
+      <!-- Nav tabs -->
+      <div class="tab-head">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item active">
+            <a class="nav-link" data-toggle="tab" href="#course" role="tab">Course Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#batches" role="tab">Batches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#resources" role="tab">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#faq" role="tab">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content about-panel">
+        <div class="tab-pane active" id="course" role="tabpanel">
+          <div class="row">
+            <div class="col-lg-8">
+              <article class="content-left">
+                <div class="panel-desc mrgn-bttm">
+                  <h3>About this Course</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sapiente consectetur saepe adipisicing elit. Debitis odit, dolorum, earum molestias mollitia officia animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sapiente consectetur saepe. Debitis odit, dolorum, earum molestias mollitia officia animi? Iste id, repellendus beatae perspiciatis illo molestiae, at quia asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sapiente consectetur saepe. Debitis odit, dolorum, earum molestias mollitia officia animi? Iste id, repellendus beatae perspiciatis illo molestiae, at quia asperiores.</p>
+                </div>
+                <div class="panel-list">
+                  <div class="row mrgn-bttm">
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/co-icon1.png" alt="Date Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Course Day & Time</span>
+                          <span class="course-content">Mon, Wed, Fri (10 AM - 11 AM)</span>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/dt-icon2.png" alt="Exam Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Target Board/Exam</span>
+                          <span class="course-content">CBSE Board</span>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mrgn-bttm">
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/dt-icon3.png" alt="Subject Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Subject</span>
+                          <span class="course-content">Maths</span>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/dt-icon3.png" alt="Target Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Target Class</span>
+                          <span class="course-content">Class 6</span>
+                        </div>  
+                      </div>
+                    </div>              
+                  </div>
+                  <div class="row mrgn-bttm">
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/dt-icon4.png" alt="Topics Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Topics</span>
+                          <span class="course-content">Algebra</span>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="course-desc">
+                        <div class="co-icon d-inline-flex p-2 bd-highlight">
+                            <img src="../../assets/images/icons/dt-icon5.png" alt="Session Icon">
+                        </div>
+                        <div class="co-desc">                    
+                          <span class="course-price">Number of Session</span>
+                          <span class="course-content">25</span>
+                        </div>  
+                      </div>
+                    </div>              
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-4">  
+              <aside class="content-right">
+                <div class="progress-box">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="course-desc d-inline-flex bd-highlight">
+                        <div class="co-bar">
+                          <div class="progress" data-percentage="70">
+                              <span class="progress-left">
+                                <span class="progress-bar"></span>
+                              </span>
+                              <span class="progress-right">
+                                <span class="progress-bar"></span>
+                              </span>                        
+                            </div>
+                        </div>
+                        <div class="co-desc progress-value">                    
+                            <span class="course-price">75%</span>
+                            <span class="course-content">Booked</span>
+                        </div>  
+                      </div>                     
+                    </div>
+                    <div class="col-6">
+                      <div class="course-desc d-inline-flex bd-highlight">
+                        <div class="co-bar">
+                            <img src="../../assets/images/icons/advance-icon.png" alt="Advance Icon">
+                        </div>
+                        <div class="co-desc progress-value">                    
+                            <span class="course-price">Advance</span>
+                            <span class="course-content">Course</span>
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h4>Other Information</h4>
+                <ul class="info-list">
+                  <li>
+                    <div class="course-desc">
+                      <div class="co-icon d-inline-flex bd-highlight">
+                          <img src="../../assets/images/icons/info-icon1.png" alt="Info Icon">
+                      </div>
+                      <div class="co-desc">                    
+                        <span class="course-content">Mode of Tutoring</span>
+                        <span class="course-price">Offline</span>                        
+                      </div>  
+                    </div>
+                  </li>
+                  <li>
+                    <div class="course-desc">
+                      <div class="co-icon d-inline-flex bd-highlight">
+                          <img src="../../assets/images/icons/info-icon1.png" alt="Info Icon">
+                      </div>
+                      <div class="co-desc">                    
+                        <span class="course-content">Batch Size</span>
+                        <span class="course-price">30 Students</span>                        
+                      </div>  
+                    </div>
+                  </li>
+                  <li>
+                    <div class="course-desc">
+                      <div class="co-icon d-inline-flex bd-highlight">
+                          <img src="../../assets/images/icons/info-icon2.png" alt="Info Icon">
+                      </div>
+                      <div class="co-desc">                    
+                        <span class="course-content">Left Seat(S)</span>
+                        <span class="course-price">10 Seats</span>                        
+                      </div>  
+                    </div>
+                  </li>
+                  <li>
+                    <div class="course-desc">
+                      <div class="co-icon d-inline-flex bd-highlight">
+                          <img src="../../assets/images/icons/info-icon3.png" alt="Info Icon">
+                      </div>
+                      <div class="co-desc">                    
+                        <span class="course-content">Venue</span>
+                        <span class="course-price">Tuition Center</span>                        
+                      </div>  
+                    </div>
+                  </li>                    
+                  <li>
+                    <div class="course-desc">
+                      <div class="co-icon d-inline-flex bd-highlight">
+                          <img src="../../assets/images/icons/info-icon4.png" alt="Info Icon">
+                      </div>
+                      <div class="co-desc">                    
+                        <span class="course-content">Cancellation Policy</span>
+                        <span class="course-price">Refundable</span>                        
+                      </div>  
+                    </div>
+                  </li>                  
+                </ul>
+              </aside>
+            </div>       
+          </div>     
+        </div>
+        <div class="tab-pane" id="reviews" role="tabpanel">
+          <h3>Reviews</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sapiente consectetur saepe. Debitis odit, dolorum, earum molestias mollitia officia animi? Iste id, repellendus beatae perspiciatis illo molestiae, at quia asperiores.</p>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero laudantium repellat ratione velit tempora quis corrupti itaque aperiam veritatis vel magnam, eveniet enim expedita est repudiandae, totam reprehenderit voluptas! Quia.</p>
+        </div>
+        <div class="tab-pane" id="batches" role="tabpanel">
+          <h3>Batches</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae error quibusdam excepturi repudiandae eius, vel porro voluptatem temporibus aperiam. Labore aliquid ea quidem, adipisci tenetur tempora dolore ipsa et.</p>
+        </div>
+        <div class="tab-pane" id="resources" role="tabpanel">
+          <h3>Resources</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae error quibusdam excepturi repudiandae eius, vel porro voluptatem temporibus aperiam. Labore aliquid ea quidem, adipisci tenetur tempora dolore ipsa et.</p>
+        </div>
+        <div class="tab-pane" id="faq" role="tabpanel">
+          <h3>FAQ</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti beatae error quibusdam excepturi repudiandae eius, vel porro voluptatem temporibus aperiam. Labore aliquid ea quidem, adipisci tenetur tempora dolore ipsa et.</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</section>
+
